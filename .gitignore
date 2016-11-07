@@ -16,3 +16,6 @@
 .idea
 Gemfile.lock
 
+spec/controllers/
+spec/helpers/
+spec/views/
