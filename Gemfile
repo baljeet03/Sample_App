@@ -10,6 +10,8 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
 end
 
+gem 'bootstrap-sass', '2.1'
+
 gem 'test-unit'
 group :test do
   gem 'capybara', '1.1.2'
