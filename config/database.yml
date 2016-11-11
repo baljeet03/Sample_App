@@ -14,6 +14,7 @@ development:
   reconnect: false
   database: sample_app_development
   pool: 5
+  host: localhost
   username: root
   password: 1234
   socket: /tmp/mysql.sock
@@ -27,6 +28,7 @@ test:
   reconnect: false
   database: sample_app_test
   pool: 5
+  host: localhost
   username: root
   password: 1234
   socket: /tmp/mysql.sock

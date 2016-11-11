@@ -1,13 +1,19 @@
 require 'spec_helper'
 
 describe "Static pages" do
-
   subject { page }
 
   describe "Home page" do
     before { visit root_path }
-
     it { should have_selector('h1', text: 'Sample App') }
+  end
+
+  describe "Home page" do
+    it "should have right link" do
+      visit root_path
+      click_link "Sign up now!"
+      page.should have_selector('h1', text:'Sign up')
+    end
   end
 
   describe "Help Page" do
@@ -37,3 +43,4 @@ describe "Static pages" do
     end
   end
 end
+
